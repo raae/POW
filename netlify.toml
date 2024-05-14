@@ -1,9 +1,11 @@
 [build]
   publish = "public"
-  functions = "lambda"
-  command = "npm run prod"
+  command = "npm run build"
 
 [[plugins]]
 package = 'netlify-plugin-contextual-env'
   [plugins.inputs]
   mode = 'suffix'
+
+[[plugins]]
+package = "@netlify/plugin-gatsby"
